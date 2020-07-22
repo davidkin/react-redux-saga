@@ -2,7 +2,7 @@ import React from 'react';
 import './Layout.scss';
 import ImageCard from '../components/ImageCard/ImageCard';
 
-const Layout = ({ images }) => {
+const Layout = ({ images = [] }) => {
     return (
         <div className="container">
             
@@ -16,10 +16,7 @@ const Layout = ({ images }) => {
                 (
                     <div className="cards">
                         { images.map(item => (
-                            <>
-                                <ImageCard key={item.id} item={item} />   
-                                <hr/>     
-                            </>
+                            <ImageCard key={item.id} item={item} />     
                         )) }
                     </div>
                 ) : (

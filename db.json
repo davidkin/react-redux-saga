@@ -1,0 +1,16 @@
+{
+  "images": [
+    { 
+      "id": 1,
+      "title": "First", 
+      "src": "",
+      "position": ""
+    },
+    { 
+      "id": 2,
+      "title": "Second", 
+      "src": "",
+      "position": ""
+    }
+  ]
+}

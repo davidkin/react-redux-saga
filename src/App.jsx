@@ -1,12 +1,15 @@
 import React from 'react';
 import './index.scss';
-import ImageState from './context/images/ImageState';
 import Main from './pages/Main/Main';
+import { Provider } from 'react-redux';
+import configureStore from './store/store';
+
+const store = configureStore();
 
 const App = () => (
-  <ImageState>
+  <Provider store={store}>
     <Main />
-  </ImageState>
+  </Provider>
 );
 
 export default App;
