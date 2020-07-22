@@ -1,0 +1,1 @@
+export const API_DOMEN = 'http://localhost:3000';
