@@ -1,5 +1,5 @@
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
     padding: 20px;
@@ -9,8 +9,8 @@
 .cards {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    padding-top: 100px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .popup-button {
