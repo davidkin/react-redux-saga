@@ -6,8 +6,6 @@ import { getImagesError, getImagesSuccess } from '../../actions/images';
 function* getImages() {
     const response = yield apply(API, API.getImages, []);
     
-    console.log('Saga: getImages', response);
-
     if (response.length) {
         yield put(getImagesSuccess(response))
     } else {

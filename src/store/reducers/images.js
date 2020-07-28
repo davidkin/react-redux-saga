@@ -10,14 +10,15 @@ const initialValue = {
 export const imagesReducer = (state = initialValue, { type, payload}) => {
     switch (type) {
         case actionTypes.images.getAll:
-            console.log('Reducer (images): getAll');
+        case actionTypes.images.create:
+        case actionTypes.images.delete:
+        case actionTypes.images.update:
             return {
                 ...state,
                 isFetch: true
             };
 
         case actionTypes.images.success:
-            console.log('Reducer (images): success', payload);
             return {
                 ...state,
                 images: payload,
